@@ -17,13 +17,9 @@ gallery.innerHTML = galleryArray.join('');
     const lightbox = new SimpleLightbox('.gallery a', {
         captions: true,
         captionType: 'attr',
-        captionsData: 'bottom',
+        captionsData: 'alt',
+        captionPosition: 'bottom',
         captionDelay: 250,
-        nav: false,
     });
-
-    // const instance = basicLightbox.create(`<img src = '${event.target.dataset.source}' width="800" height="600">`);
-    
-   //  instance.show();
 
 console.log(galleryItems);
