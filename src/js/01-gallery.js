@@ -7,8 +7,8 @@ const galleryArray = galleryItems.map((item) =>
     <a class='gallery__link' href='${item.original}'>
     <img class = 'gallery__image'
     src = '${item.preview}'
-    alt = '${item.description}'
-    data-source = '${item.original}'/>
+    data-source = '${item.original}'
+    alt = '${item.description}'/>
     </a>
   </li>`
 );
