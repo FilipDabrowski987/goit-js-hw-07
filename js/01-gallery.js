@@ -16,7 +16,10 @@ const galleryArray = galleryItems.map((item) =>
 gallery.innerHTML = galleryArray.join('');
 
 gallery.addEventListener('click', (event) => {
-    event.preventDefault();
+  event.preventDefault();
+  if (event.target.tagName !== 'IMG') {
+        return;
+    }
 
     const instance = basicLightbox.create(`<img src = '${event.target.dataset.source}' width="800" height="600">`);
     
